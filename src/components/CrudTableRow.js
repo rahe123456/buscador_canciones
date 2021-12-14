@@ -1,14 +1,15 @@
 import React from 'react'
 
-function CrudTableRow({element}) {
+function CrudTableRow({element, setDataToEdit, deleteData}) {
+    let {name, age, email, id} = element;
     return (
         <tr>
-            <td>{element.name}</td>
-            <td>{element.age}</td>
-            <td>{element.email}</td>
+            <td>{name}</td>
+            <td>{age}</td>
+            <td>{email}</td>
             <td>
-                <button>Editar</button>
-                <button>Eliminar</button>
+                <button onClick={()=>setDataToEdit(element)}>Editar</button>
+                <button onClick={()=>deleteData(id,name)}>Eliminar</button>
             </td>
         </tr>
     )

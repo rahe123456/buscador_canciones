@@ -46,16 +46,23 @@ function CrudApp() {
     }
 
     const updateData=(data)=>{
+        let newData = db.map(element => element.id === data.id ? data: element);
+        setDb(newData);
+    };
 
-    }
+    const deleteData=(id,name)=>{
+        let isDelete = window.confirm(`¿Estás seguro de eliminar el usuario '${name}'?`);
 
-    const deleteData=(id)=>{
-
+        if(isDelete){
+            let newData = db.filter(element =>element.id !== id);
+            setDb(newData);
+        }
     }
 
     return (
         <div>
             <h2>CRUD App</h2>
+            <article className='grid-1-2'>
             <CrudForm
                 createData={createData}
                 updateData={updateData}
@@ -67,6 +74,7 @@ function CrudApp() {
                 setDataToEdit={setDataToEdit}
                 deleteData={deleteData}  
             />
+            </article>
         </div>
     );
 }
