@@ -1,0 +1,52 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "name": "Hector",
+      "age": 27,
+      "email": "rahe06@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Jose",
+      "age": 50,
+      "email": "jose@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Luis",
+      "age": 25,
+      "email": "luis@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Mario",
+      "age": 33,
+      "email": "mario@gmail.com"
+    },
+    {
+      "id": 5,
+      "name": "Ruben",
+      "age": 40,
+      "email": "ruben@gmail.com"
+    },
+    {
+      "id": 6,
+      "name": "Valdez",
+      "age": "24",
+      "email": "valdezelpez@gmail.com"
+    },
+    {
+      "id": 7,
+      "name": "la chele",
+      "age": "26",
+      "email": "manochele@gmail.com"
+    },
+    {
+      "name": "isaac",
+      "age": "25",
+      "email": "isaac@gmail.com",
+      "id": 1639537778545
+    }
+  ]
+}
